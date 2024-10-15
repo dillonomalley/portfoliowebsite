@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dillon's Portfolio</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="/">Dillon O'Malley</a>
+            </div>
+            <div class="nav1">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Me</a></li>
+                <li><a href="/projects">Projects</a></li>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <h2>Projects</h2>
+            </br>
+            <p> Please press on the button to view the project!</p>
+            </br>
+            <div class="grid22">
+            <div class="infobutton">
+
+            <button id="showGantry" class="pushable">
+  <span class="front">
+    Gantry Test Fixture
+  </span>
+</button>
+
+</div>
+<div class="infobutton">
+
+<button id="showButtons" class="pushable">
+  <span class="front">
+    Button Assembly
+  </span>
+</button>
+
+</div>
+</div>
+        </div>
+
+
+
+
+        <div id="gantry" class="hidden">
+        <section class="grid2">
+       <div class="info" style="display: flex; flex-direction: row; align-items: center; justify-content: center; padding: 0;">
+            <figure>
+            <div class="image-container">
+                <img style="height:auto; width:300px; margin: auto;" src="/gantry1.jpg"></div>
+                <figcaption style="display: flex; flex-direction: row; align-items: center; justify-content: center; text-align:center;"> The above picture is my initial sketch of the structure. The colored in black parts on top represent the 3D printed faces. The dimensions above are in mm are unchanged in the final structure. </figcaption>
+
+            </figure>
+        </div>
+        <div class="info" style="font-size:18px">
+            <h2> The Problem </h2>
+            <p>At Clarapath, one of my responsibilities was testing the various subassemblies of the final product. One of the most tricky parts to test was a large gantry assembly, because in order to test it the gantry had to be flipped on its back, thereby working against gravity and compromising the integrity of the test. </p>
+            </br>
+            <p>To fix this issue, I designed and manufactured a test ficture from 8020 aluminum bars, aluminum gussets, and 3D printed plastic faces which serves to hold the gantry up in the correct orientation while the test is performed. </p>
+        </div>
+
+        <div class="info" style="font-size:18px">
+            <h2> The Design Process </h2>
+            <p>To solve this engineering problem, I utilized my skills in... </p>
+            <p> - Solidworks: I modeled the assembly before putting it together, using the software to ensure my design made sense before constructing it in the real world. </p>
+            <p> - Rapid 3D Printing Prototyping: Utilizing the files I created in solidworks, I was able to download stl files which I could then 3D print. Observing the flaws in my model (made more obvious by viewing them physically), I made several rounds of edits to my design.
+            <p> - Machine Shop Tools: To put the device together physically, I had to first use a chop saw to mark and divide the purchased aluminum 8020 into the desired lengths. Additionally, I used a belt sander to make the pieces easier to work with once they were cut by the rough chop saw.</p>
+            </br>
+            <p>Unfortunately, on assembly I ran into the problem that the vertical bars were not level by about 5mm. I fixed this by using a hand sander to shrink all the vertical bars to the shortest one. This worked out fine thanks to the extra 50mm of wiggle room I gave the height of the fixture.  </p>
+        </div>
+         <div class="info" style="display: flex; flex-direction: row; align-items: center; justify-content: center; padding: 0;">
+            <figure>
+            <div class="image-container">
+                <img style="height:auto; width:400px; margin: auto;" src="/gantry2.gif"></div>
+                <figcaption style="display: flex; flex-direction: row; align-items: center; justify-content: center; text-align:center;"> I made the animation above for a design review around halfway through the overall timeline of the project. It depicts the last step in a plan to assembly the pieces together. </figcaption>
+
+            </figure>
+        </div>
+
+        <div class="info" style="display: flex; flex-direction: row; align-items: center; justify-content: center; padding: 0;">
+            <figure>
+            <div class="image-container">
+                <img style="height:auto; width:300px; margin: auto;" src="/gantry3.jpg"></div>
+                <figcaption style="display: flex; flex-direction: row; align-items: center; justify-content: center; text-align:center;"> The final product, with the gantry clamped into the fixture. </figcaption>
+
+            </figure>
+        </div>
+        <div class="info" style="font-size:18px">
+            <h2> Outcomes </h2>
+            <p>The project completed, the assembly currently resides at Clarapath, where it continues to be used to test the gantry subassembly. This project aided greatly in my more physical mechanical engineering skills, such as the machine shop tools and 3D printing. In the future I hope to be able to make more large assemblies like it. </p>
+        </div>
+        </section>
+        </div>
+
+
+
+
+        <div id="buttons" class="hidden">
+        <section class="grid2">
+        <div class="info" style="display: flex; flex-direction: row; align-items: center; justify-content: center; padding: 0;">
+            <figure>
+            <div class="image-container">
+                <img style="height:auto; width:350px; margin: auto;" src="/buttons1.png"></div>
+                <figcaption style="display: flex; flex-direction: row; align-items: center; justify-content: center; text-align:center;"> This is a screenshot of the GDK software tool. </figcaption>
+
+            </figure>
+        </div>
+        <div class="info" style="font-size:18px">
+         <h2> The Problem </h2>
+            <p>At Clarapath, I often worked with Galil controllers and by extension the software that came with it, GDK. However, this software can be intimidating for nontechnical employees to interface with. As a result, I was tasked with creating an electrical device that could interact with the Galil controller without having to deal with downloading code or a terminal. </p>
+            </br>
+            <p>To fix this issue, I designed and manufactured a button assembly which sends electrical signals directly to the Galil controller. This would allow the user to easily turn on the controller and start pressing the buttons to operate the Galil controller without interfacing with the software. </p>
+        </div>
+
+        <div class="info" style="font-size:18px">
+            <h2> The Design Process </h2>
+            <p>To solve this engineering problem, I utilized my skills in... </p>
+            <p> - Electrical Circuitry: To create the circuitry for this device, I had to read the extensive documentation for the Galil controller and design basic circuitry which would allow a human to easily interact with the hardware. The circuit I designed is down to the left - the numbers (#) below the inputs show the pins on the D-sub that these wires were soldered into. </p>
+            <p> - Rapid 3D Printing Prototyping: To design the casing for this project I utilized a 3D printed base with a laser cut acrylic cut screwed on. The 3D printed base went through a few iterations before I settled on this design, which matches nicely with the size of the buttons. </p>
+            <p> - Soldering: To assemble the circuit, I had to solder the wires into the small pins on the 44-pin D-sub. Before this project I had little to no experience with soldering, but thankfully this project helped a lot to refine those skills, to the point where I now feel comfortable soldering components for personal projects.</p>
+        </div>
+         <div class="info" style="display: flex; flex-direction: row; align-items: center; justify-content: center; padding: 0;">
+            <figure>
+            <div class="image-container">
+                <img style="height:auto; width:300px; margin: auto;" src="/buttons2.webp"></div>
+                <figcaption style="display: flex; flex-direction: row; align-items: center; justify-content: center; text-align:center;"> This is a sketch I made of the electrical circuitry before soldering the components </figcaption>
+
+            </figure>
+        </div>
+
+        <div class="info" style="display: flex; flex-direction: row; align-items: center; justify-content: center; padding: 0;">
+            <figure>
+            <div class="image-container">
+                <img style="height:auto; width:300px; margin: auto;" src="/buttons3.webp"></div>
+                <figcaption style="display: flex; flex-direction: row; align-items: center; justify-content: center; text-align:center;"> The final product. The wire coming out of the front connects to a 44 pin D-sub which plugs into the Galil controller. </figcaption>
+
+            </figure>
+        </div>
+        <div class="info" style="font-size:18px">
+            <h2> Outcomes </h2>
+            <p>The project completed, the assembly currently resides at Clarapath. Its plug and play nature allows it to be used to perform small scale operations and rapidly test the mechanics of prototypes (without having to worry about the electrical stuff). This project aided greatly in my electical engineering skills, such as soldeirng and reading electrical data sheets. In the future I hope to be able to make more multidisplinary projects like it. </p>
+        </div>
+        </section>
+        </div>
+    </main>
+<script>
+    // Function to show or hide sections based on button click
+    document.getElementById('showGantry').addEventListener('click', function() {
+        // Hide 'buttons' section and show 'gantry' section
+        document.getElementById('buttons').classList.add('hidden');
+        document.getElementById('gantry').classList.remove('hidden');
+    });
+
+    document.getElementById('showButtons').addEventListener('click', function() {
+        // Hide 'gantry' section and show 'buttons' section
+        document.getElementById('gantry').classList.add('hidden');
+        document.getElementById('buttons').classList.remove('hidden');
+    });
+</script>
+</body>
+</html>
